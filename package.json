@@ -1,0 +1,14 @@
+{
+  "name": "flou",
+  "version": "1.0.0",
+  "description": "flou training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bayusantiko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
