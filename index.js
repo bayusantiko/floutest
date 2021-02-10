@@ -6,7 +6,7 @@ app.listen(3000, function () {
 });
 
 app.get("/", (req, res) => {
-  res.send("Test Flou");
+  res.send("Test Flou hari 3");
 });
 
 app.get("/delete", (req, res) => {
