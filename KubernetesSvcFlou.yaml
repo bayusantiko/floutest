@@ -8,6 +8,6 @@ spec:
     app: nodejs-app
   ports:
   - protocol: TCP
-    port: 3200 # ClusterIP Port, Will Automatically Created
+    port: 8080 # ClusterIP Port, Will Automatically Created
     targetPort: 3000 # Container Port, Inside a Pod
     nodePort: 30008 # range nodeport 30000 - 32767
