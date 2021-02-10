@@ -19,8 +19,8 @@ pipeline{
         }
         stage('Deploy to k8s'){
             steps{
-                sh "chmod +x cHangeTag.sh"
-                sh "./cHangeTag.sh ${DOCKER_TAG}"
+                sh "chmod +x ChangeTag.sh"
+                sh "./ChangeTag.sh ${DOCKER_TAG}"
                 sshagent(['kubernetesFlou']) {
                     sh "scp -o StrictHostKeyChecking=no kubernetes-deploy-app.yaml KubernetesSvcFlou.yaml root@103.147.2.204:/root/"
                     script{
